@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js"></script>
+</head>
+<body>
+    <!-- <div class="header"> -->
+    <div class="cart">
+        <i class="fa fa-shopping-cart" style="font-size:48px;color:red"></i>
+        <p id="count">0</p>
+    </div>
+    
+    <!-- </div> -->
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div id="cartItem">No items !!</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total"> $ 0 </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-card" id="checkoutCard">
+        <h2>Checkout</h2>
+        <p>Thank you for shopping with us!</p>
+        <p>Total Amount: <span id="checkoutTotal">$ 0</span></p>
+        <button onclick="closeCheckout()">Close</button>
+    </div>
+
+    <!-- Add a checkout button after the cart container -->
+    <div id="checkout"></div>
+    <script src="main.js"></script>
+</body>
+</html>
